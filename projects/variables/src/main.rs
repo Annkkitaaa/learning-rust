@@ -16,5 +16,11 @@ fn main() {
     println!("The value of x is: {x}");
     println!("we need to learn rust this week ")
 
+       {                      // s is not valid here, it’s not yet declared
+        let s = "hello";   // s is valid from this point forward
+
+        // do stuff with s
+    } 
+
      
 }
