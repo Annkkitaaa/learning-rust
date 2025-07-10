@@ -13,3 +13,8 @@ let mut amount_satoshis: u64 = 100000000;  // 1 BTC = 100M satoshis, mutable
 let mut confirmation_count: u8 = 0;        // Mutable
 let mut is_verified: bool = false;         // Mutable  
 let transaction_type: char = 'S';          // Immutable
+
+fn btc_to_satoshis(btc: f64) -> u64 {
+    let satoshis = btc * 100_000_000.0;  // Note the .0 for f64 multiplication
+    satoshis as u64  // Type conversion with 'as'
+}
